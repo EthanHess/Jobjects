@@ -58,6 +58,9 @@ class SimpsonsCharacter {
 class Homer extends SimpsonsCharacter {
 
 	int age; 
+	Marge wife; 
+
+	ArrayList<SimpsonsCharacter> familyMembers; 
 
 	public Homer(int homerAge) {
 		age = homerAge;
@@ -76,6 +79,9 @@ class Homer extends SimpsonsCharacter {
 class Marge extends SimpsonsCharacter {
 
 	int hairHeight; 
+	Homer husband; 
+
+	ArrayList<SimpsonsCharacter> familyMembers; 
 
 	public Marge(int margeHairHeight) {
 		hairHeight = margeHairHeight; 
@@ -104,3 +110,40 @@ class Maggie extends SimpsonsCharacter {
 	
 	
 }
+
+//TODO implement parking lot system design in Java
+
+class ParkingLot {
+
+	int zipCode; 
+
+}
+
+class ParkingSpot {
+
+	int spotNumber; 
+
+	public placeVehicle(Vehicle vehicle) {
+
+	}
+}
+
+class Vehicle {
+
+	String spotNumber; 
+	String lisencePlate; 
+	String color; 
+
+	public Vehicle(String lisencePlate, String color) {
+		this.lisencePlate = lisencePlate; 
+		this.color = color; 
+	}
+
+}
+
+//Make sure retrieving vehicle is as easy as putting it in/ i.e. different buckets(organized) with hashtables for O(1) lookup etc.
+
+//Handle ambiguity, come up with systematic approach, take sizes into account (Bus, truck, moto, car etc.)
+
+
+
